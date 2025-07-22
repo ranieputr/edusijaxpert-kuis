@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 const questions = [
   {
@@ -89,12 +90,11 @@ export default function QuizPage() {
             >
               Ulangi Kuis
             </button>
-            <a
-              href="/"
-              className="block w-full bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-colors"
-            >
-              Kembali ke Home
-            </a>
+            <Link href="/">
+              <div className="block w-full bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-colors text-center">
+                Kembali ke Home
+              </div>
+            </Link>
           </div>
         ) : (
           <>
